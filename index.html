@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="html">
+    <head>
+
+        <script type="text/javascript" src="jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="funcoes.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+    <body>
+    <div class="div1">
+        <h1 class="texto-branco" style="text-align: center"> Calculadora rápida </h1>
+        
+    </div>
+
+    <div class="div2">
+
+    </div>
+    
+    <div class="div3">
+        <h3 class="h3" style="text-align: center"> Para utilizar, informe os valores da operação nos campos indicados e clique em qualquer botão laranja, referente a operação desejada. </h2>
+        <table align="center">  
+            <tr><!--Adição-->
+                <td><button id="operacaoEscritaSoma" class="botao2">Adição</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="soma1" placeholder="Valor 1" style="text-align: center"></td>
+                <td><button id="somar" class="botao1">+</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="soma2" placeholder="Valor 2" style="text-align: center"></td>
+                <td><button id="=" class="simbolo-resultado" align="center">=</button></td>
+                <td><input type="text" class="campo-resultado" size="10" id="resultadoSoma" placeholder="Resultado" style="text-align: center"></td>
+                <td><button id="limparSoma" class="botao-limpar">Limpar</button></td>
+            </tr>
+
+            <tr> <!--Subtração-->
+                <td><button id="operacaoEscritaSubtracao" class="botao2">Subtração</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="subtracao1" placeholder="Valor 1" style="text-align: center"></td>
+                <td><button id="subtrair" class="botao1">-</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="subtracao2" placeholder="Valor 2" style="text-align: center"></td>
+                <td><button id="=" class="simbolo-resultado" align="center">=</button></td>
+                <td><input type="text" class="campo-resultado" size="10" id="resultadoSubtracao" placeholder="Resultado" style="text-align: center"></td>
+                <td><button id="limparSubtracao" class="botao-limpar">Limpar</button></td>
+            </tr>
+
+            <tr> <!--Multiplicação-->
+                <td><button id="operacaoEscritaMultiplicacao" class="botao2">Multiplicação</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="multiplicacao1" placeholder="Valor 1" style="text-align: center"></td>
+                <td><button id="multiplicar" class="botao1">*</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="multiplicacao2" placeholder="Valor 2" style="text-align: center"></td>
+                <td><button id="=" class="simbolo-resultado" align="center">=</button></td>
+                <td><input type="text" class="campo-resultado" size="10" id="resultadoMultiplicacao" placeholder="Resultado" style="text-align: center"></td>
+                <td><button id="limparMultiplicacao" class="botao-limpar">Limpar</button></td>
+            </tr>
+
+            <tr> <!--Divisão-->
+                <td><button id="operacaoEscritaDivisao" class="botao2">Divisão</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="divisao1" placeholder="Dividendo" style="text-align: center"></td>
+                <td><button id="dividir" class="botao1">/</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="divisao2" placeholder="Divisor" style="text-align: center"></td>
+                <td><button id="=" class="simbolo-resultado" align="center">=</button></td>
+                <td><input type="text" class="campo-resultado" size="10" id="resultadoDivisao" placeholder="Resultado" style="text-align: center"></td>
+                <td><button id="limparDivisao" class="botao-limpar">Limpar</button></td>
+            </tr>
+
+            <tr> <!--Potencia-->       
+                <td><button id="operacaoEscritaPotenciacao" class="botao2">Potenciação</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="potencia1" placeholder="Base" style="text-align: center"></td>
+                <td><button id="potenciar" class="botao1">**</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="potencia2" placeholder="Expoente" style="text-align: center"></td>
+                <td><button id="=" class="simbolo-resultado" align="center">=</button></td>
+                <td><input type="text" class="campo-resultado" size="10" id="resultadoPotencia" placeholder="Resultado" style="text-align: center"></td>
+                <td><button id="limparPotencia" class="botao-limpar">Limpar</button></td>
+            </tr>
+
+            <tr> <!--Resto da Divisão-->
+                <td><button id="operacaoEscritaRestoDiv" class="botao2">Resto da Divisão</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="restoDiv1" placeholder="Dividendo" style="text-align: center"></td>
+                <td><button id="restoDiv" class="botao1">//</button></td>
+                <td><input type="text" class="campo-texto" size="3" id="restoDiv2" placeholder="Divisor" style="text-align: center"></td>
+                <td><button id="=" class="simbolo-resultado" align="center">=</button></td>
+                <td><input type="text" class="campo-resultado" size="10" id="resultadoRestoDiv" placeholder="Resultado" style="text-align: center"></td>
+                <td><button id="limparRestoDiv" class="botao-limpar">Limpar</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="div4">
+        <table align="center" padding="8">
+            <tr>
+                <td colspan="2"></td>
+                <td align="center"><h4 class="h4">Sobre</h4></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td align="center"><h5 class="h5" align="center">Feito por Lucas Kusman Leal, estudante de Bacharelado em Sistemas de Informação PUC-PR.</h5></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td align="center"><h5 class="h5" align="center"></h5></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"></td>
+                <td align="center"><h5 class="h5-2" align="center">2020. todos os direitos reservados.</h5></td>
+            </tr>
+
+            <tr>
+                <td align="center"><a class="link2" href="https://www.instagram.com/lucaskleal222">Instagram</a></td>
+                <td colspan="1"></td>
+                <td align="center"><a class="link2" href="https://github.com/LucasKleaL">GitHub</a></td>
+                <td align="center"><a class="link2" href="https://www.linkedin.com/in/lucas-kusman-leal-101423199/">LinkedIn</a></td>
+            </tr>
+            
+        </table>
+
+    </div>
+    
+    </body> 
+</html>
