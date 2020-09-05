@@ -48,6 +48,7 @@
     height: 60px;
     font-size: 20px;
     border: 0;
+    border-radius: 10px;
 }
 
 .botao2{
@@ -57,6 +58,7 @@
     height: 60px;
     font-size: 15px;
     border: 0;
+    border-radius: 10px;
 }
 
 .campo-texto{  
@@ -65,6 +67,7 @@
     background-color: #EEE;
     border-color: #CCC;
     border-width: 1px;
+    border-radius: 5px;
 }
 
 .simbolo-resultado{
@@ -74,10 +77,13 @@
     border: 0;
     color: black;
     font-size: 10px;
+    border-radius: 2px;
 }
 
 .campo-resultado{
     height: 60px;
+    border-radius: 10px;
+    border: 0;
 }
 
 .botao-limpar{
@@ -87,6 +93,7 @@
     height: 60px;
     font-size: 20px;
     border: 0;
+    border-radius: 10px;
 }
 
 .div1{

@@ -121,7 +121,7 @@ $(document).ready(function(){
 
     });
 
-    $("#operacaoRestoDiv").click(function(){
+    $("#operacaoEscritaRestoDiv").click(function(){
         var valor1 = parseInt($("#restoDiv1").val());
         var valor2 = parseInt($("#restoDiv2").val());
 
