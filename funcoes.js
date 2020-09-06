@@ -1,7 +1,28 @@
 $(document).ready(function(){
 
-//botoes com simbolos de operacoes / operacoes e variaveis
+//botoes do primeiro menu (modos de visualizacao)
 
+    $("#botaoModoClaro").click(function(){
+
+        $("#div1").addClass("div1-clara");
+        $("#div2").addClass("div2-clara");
+        $("#div3").addClass("div3-clara");
+        $("#div4").addClass("div4-clara");
+        
+        $("#htmlBackground").addClass("html-claro");
+        $("#h1").addClass("texto-preto");
+        $("#h3").addClass("h3-preto");
+        $("#h4").addClass("h4-preto");
+        $("#h5").addClass("h5-preto");
+        $("#h5-2").addClass("h5-2-preto")
+
+    });
+
+
+
+
+
+//botoes com simbolos de operacoes / operacoes e variaveis
 
     $("#somar").click(function(){
         var valor1 = parseInt($("#soma1").val());

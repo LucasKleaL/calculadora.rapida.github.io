@@ -2,9 +2,19 @@
     background-color: #121212;
 }
 
+.html-claro{
+    background-color: #c2c2c2;
+}
+
 .texto-branco{
     padding-top: 23px;
     color: #FFFFFF;
+    font-family: arial;
+}
+
+.texto-preto{
+    padding-top: 23px;
+    color: #000000;
     font-family: arial;
 }
 
@@ -14,8 +24,21 @@
     font-family: arial;
 }
 
+.h3-preto{
+    color: black;
+    font-size: 20px;
+    font-family: arial;
+}
+
 .h4{
     color: #EEE;
+    font-size: 30px;
+    font-family: arial;
+    padding-top: 7px;
+}
+
+.h4-preto{
+    color: black;
     font-size: 30px;
     font-family: arial;
     padding-top: 7px;
@@ -28,14 +51,27 @@
 
 }
 
+.h5-preto{
+    color: black;
+    font-size: 20px;
+    font-family: arial;
+
+}
+
 .h5-2{
     color: rgb(228, 228, 228);
     font-size: 15px;
     font-family: arial;
 }
 
+.h5-2-preto{
+    color: black;
+    font-size: 15px;
+    font-family: arial;
+}
+
 .link2{
-    color: #878683;
+    color: #7c7c7c;
     font-size: 20px;
     font-family: arial;
     padding-top: 50px;
@@ -73,7 +109,8 @@
     height: 60px;
     width: 80px;
     background-color: #EEE;
-    border-color: #CCC;
+    border-color: #7c7c7c;
+    border-style: solid;
     border-width: 1px;
     border-radius: 5px;
 }
@@ -130,9 +167,21 @@
     height: 80px;
 }
 
+.div1-clara{
+    background-color: #c2c2c2;
+    width: 100%;
+    height: 80px;
+}
+
 .div2{
     width: 100%;
     height: 130px;
+}
+
+.div2-clara{
+    width: 100%;
+    height: 130px;
+    background-color: #c2c2c2;
 }
 
 .div3{
@@ -140,8 +189,20 @@
     height: 1000px;
 }
 
+.div3-clara{
+    width: 100%;
+    height: 1000px;
+    background-color: #c2c2c2;
+}
+
 .div4{
     width: 100%;
     height: 250px;
     background-color: #000000;
+}
+
+.div4-clara{
+    width: 100%;
+    height: 250px;
+    background-color: #7c7c7c;
 }
