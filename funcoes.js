@@ -2,6 +2,56 @@ $(document).ready(function(){
 
 //botoes do primeiro menu (modos de visualizacao)
 
+    $("#botaoModoNormal").click(function(){
+
+        $("#div1").removeClass("div1-clara").addClass("div1");
+        $("#div2").removeClass("div2-clara").addClass("div2");
+        $("#div3").removeClass("div3-clara").addClass("div3");
+        $("#div4").removeClass("div4-clara").addClass("div4");
+
+        $("#htmlBackground").removeClass("html-claro").addClass("html");
+        $("#h1").removeClass("texto-preto").addClass("texto-branco");
+        $("#h3").removeClass("h3-preto").addClass("h3");
+        $("#h4").removeClass("h4-preto").addClass("h4");
+        $("#h5").removeClass("h5-preto").addClass("h5");
+        $("#h5-2").removeClass("h5-2-preto").addClass("h5-2");
+
+        //modo normal botao operacao soma
+        $("#operacaoEscritaSoma").removeClass("botao2-daltonico").addClass("botao2")
+        $("#somar").removeClass("botao1-daltonico").addClass("botao1")
+        $("#limparSoma").removeClass("botao-limpar-daltonico").addClass("botao-limpar")
+
+        //modo normal botao operacao subtracao
+        $("#operacaoEscritaSubtracao").removeClass("botao2-daltonico").addClass("botao2")
+        $("#subtrair").removeClass("botao1-daltonico").addClass("botao1")
+        $("#limparSubtracao").removeClass("botao-limpar-daltonico").addClass("botao-limpar")
+
+        //modo normal botao operacao multiplicacao
+        $("#operacaoEscritaMultiplicacao").removeClass("botao2-daltonico").addClass("botao2")
+        $("#multiplicar").removeClass("botao1-daltonico").addClass("botao1")
+        $("#limparMultiplicacao").removeClass("botao-limpar-daltonico").addClass("botao-limpar")
+
+        //modo normal botao operacao divisao
+        $("#operacaoEscritaDivisao").removeClass("botao2-daltonico").addClass("botao2")
+        $("#dividir").removeClass("botao1-daltonico").addClass("botao1")
+        $("#limparDivisao").removeClass("botao-limpar-daltonico").addClass("botao-limpar")
+
+        //modo normal botao operacao potenciacao
+        $("#operacaoEscritaPotenciacao").removeClass("botao2-daltonico").addClass("botao2")
+        $("#potenciar").removeClass("botao1-daltonico").addClass("botao1")
+        $("#limparPotencia").removeClass("botao-limpar-daltonico").addClass("botao-limpar")
+
+        //modo normal botao resto da divisao
+        $("#operacaoEscritaRestoDiv").removeClass("botao2-daltonico").addClass("botao2")
+        $("#restoDiv").removeClass("botao1-daltonico").addClass("botao1")
+        $("#limparRestoDiv").removeClass("botao-limpar-daltonico").addClass("botao-limpar")
+
+        //modo normal texto de instrucao
+        document.querySelector(".h3").innerHTML = "Para utilizar, informe os valores da operação nos campos indicados e clique em qualquer botão laranja, referente a operação desejada.";
+
+    });
+
+
     $("#botaoModoClaro").click(function(){
 
         $("#div1").addClass("div1-clara");
@@ -14,9 +64,50 @@ $(document).ready(function(){
         $("#h3").addClass("h3-preto");
         $("#h4").addClass("h4-preto");
         $("#h5").addClass("h5-preto");
-        $("#h5-2").addClass("h5-2-preto")
+        $("#h5-2").addClass("h5-2-preto");
 
     });
+
+
+    $("#botaoModoDaltonico").click(function(){
+
+        //modo daltonico texto de instrucao
+        
+        document.querySelector(".h3").innerHTML = "Para utilizar, informe os valores da operação nos campos indicados e clique em qualquer botão amarelo, referente a operação desejada.";
+
+        //modo daltonico operacao soma
+        $("#operacaoEscritaSoma").addClass("botao2-daltonico")
+        $("#somar").addClass("botao1-daltonico")
+        $("#limparSoma").addClass("botao-limpar-daltonico")
+
+        //modo daltonico operacao subtracao
+        $("#operacaoEscritaSubtracao").addClass("botao2-daltonico")
+        $("#subtrair").addClass("botao1-daltonico")
+        $("#limparSubtracao").addClass("botao-limpar-daltonico")
+
+        //modo daltonico operacao multiplicacao
+        $("#operacaoEscritaMultiplicacao").addClass("botao2-daltonico")
+        $("#multiplicar").addClass("botao1-daltonico")
+        $("#limparMultiplicacao").addClass("botao-limpar-daltonico")
+
+        //modo daltonico operacao divisao
+        $("#operacaoEscritaDivisao").addClass("botao2-daltonico")
+        $("#dividir").addClass("botao1-daltonico")
+        $("#limparDivisao").addClass("botao-limpar-daltonico")
+
+        //modo daltonico operacao potenciacao
+        $("#operacaoEscritaPotenciacao").addClass("botao2-daltonico")
+        $("#potenciar").addClass("botao1-daltonico")
+        $("#limparPotencia").addClass("botao-limpar-daltonico")
+
+        //modo daltonico operacao resto da divisao
+        $("#operacaoEscritaRestoDiv").addClass("botao2-daltonico")
+        $("#restoDiv").addClass("botao1-daltonico")
+        $("#limparRestoDiv").addClass("botao-limpar-daltonico")
+
+    });
+
+    
 
 
 
